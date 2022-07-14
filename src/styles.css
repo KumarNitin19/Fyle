@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Quicksand', sans-serif; */
+
+
+.pagination .ngx-pagination li {
+    border: 1px solid #c3c3c3 ;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.pagination .ngx-pagination .current {
+    background: black ;
+    color: white ;
+    border: 1px solid black ;
+}
+
+.pagination .ngx-pagination .pagination-previous{
+    transform: translate(-25px, 50px);
+    border-radius: 5px;
+}
+
+
+.pagination .ngx-pagination .pagination-next{
+    transform: translate(25px, 50px);
+    border-radius: 5px;
+}

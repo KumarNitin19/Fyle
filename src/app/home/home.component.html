@@ -1,0 +1,6 @@
+<div class="home" *ngIf="!loader">
+    <app-header></app-header>
+    <app-user-detail [notFound]="notFound" [userData]="userData" [repoList]="repoList" ></app-user-detail>
+    <app-footer></app-footer>
+</div>
+<app-loader *ngIf="loader"></app-loader>

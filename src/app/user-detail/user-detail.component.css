@@ -1,0 +1,144 @@
+.top{
+    padding: 50px 0px;
+}
+.avatar{
+    height: 250px;
+    border-radius: 50%;
+}
+.user{
+    margin-left: 70px;
+}
+p{
+    margin: 0px;
+}
+.userName, .cardHeading{
+    display: flex;
+    justify-content: space-between;
+}
+.userName, .cardHeading p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+}
+.view{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 13px;
+    border-radius: 4px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    background: #00ab47;
+}
+.userDesc, .userLocation, .userLink{
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #707070;
+    margin: 13px 0px;
+    font-weight: 600;
+}
+.userLocation .fa-map-marker{
+   font-size: 21px;
+}
+.mainBody{
+    margin-top: 20px;
+}
+.card{
+    padding: 30px;
+    margin-top: 40px;
+}
+.cardDesc{
+    font-size: 1.1rem;
+    margin: 20px 0px;
+    font-family: 'Libre Baskerville', serif;
+}
+.technology button{
+    border: none;
+    background: black;
+    color: white;
+    padding: 5px 17px;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+.notFound{
+    height: calc(100vh - 123.5px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Libre Baskerville', serif;
+}
+.notFound .fa-frown-o{
+    color: #ff0057;
+    font-size: 2.4rem;
+}
+.pagination{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+
+@media (max-width:992px) {
+    .top{
+        padding: 35px 0px;
+    }
+    .user{
+        margin-left: 50px;
+    }
+    .avatar{
+        height: 150px;
+    }
+    .mainBody{
+        margin-top: 0px;
+    }
+    .cardHeading p{
+        font-size: 1.3rem;
+    }
+    .view{
+        font-size: 12px;
+    }
+    .cardDesc{
+        font-size: 0.9rem;
+    }
+    .technology button{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width:580px) {
+   
+    .user{
+        margin-left: 30px;
+    }
+    .mainBody{
+        padding: 0px 20px;
+    }
+    .technology button{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .card{
+        padding: 15px;
+        margin-top: 25px;
+    }
+    .userName{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:480px) {
+    
+    .avatar{
+        height: 50px;
+    } 
+}
