@@ -3,6 +3,10 @@
     background: black;
     color: white;
     padding: 15px;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 99;
 }
 .header img{
     height: 40px;
