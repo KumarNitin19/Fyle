@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 19px 10px;
+    width: 100%;
 }
 .footer p{
     margin: 0px;

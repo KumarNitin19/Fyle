@@ -7,9 +7,9 @@
             </div>
         </div>
         <div class="modalBody">
-            <input type="text" placeholder="Please enter your Github Username">
-            <span>Please enter a username</span>
-            <button>Submit</button>
+            <input type="text" placeholder="Please enter your Github Username"  [(ngModel)]="userName">
+            <span *ngIf="error">Please enter a username</span>
+            <button (click)="addData(userName)">Submit</button>
         </div>
     </div>
 </div>

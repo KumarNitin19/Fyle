@@ -2,17 +2,17 @@
     <div class="top d-flex align-items-center">
         <img class="avatar" src={{userData?.avatar_url}} alt="avatar">
         <div class="user">
-            <p class="userName">{{userData?.name}}</p>
-            <p class="userDesc" *ngIf="userData?.bio !== null">{{userData?.bio}}</p>
+            <p class="userName">{{userData?.name === null ? 'N/A' : userData?.name}}</p>
+            <p class="userDesc" *ngIf="userData?.bio !== null">{{userData?.bio === null ? 'N/A' : userData?.bio}}</p>
             <p class="userLocation"  *ngIf="userData?.location !== null"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;{{userData?.location}}</p>
             <p class="userLink"  *ngIf="userData?.twitter_username !== null">Twitter : <a href={{userData?.twitter_username}} target="_blank">{{userData?.twitter_username}}</a></p>
         </div>
     </div>
-    <p><i class="fa fa-link" aria-hidden="true"></i> &nbsp;<a href={{userData?.url}} target="_blank">{{userData?.html_url}}</a></p>
+    <p><i class="fa fa-link" aria-hidden="true"></i> &nbsp;<a href={{userData?.url}} target="_blank">{{userData?.html_url === null ? 'N/A' : userData?.html_url}}</a></p>
     <div class="mainBody row justify-content-between" >
         <div class="card col-md-5 col-12" *ngFor="let item of repoList | paginate: { itemsPerPage: 10, currentPage: page }">
             <div class="cardHeading">
-                 <p>{{item.name}}</p>
+                 <p class="col-7">{{item.name === null ? 'N/A' : item.name}}</p>
                  <a class="view" href={{item.html_url}} target="_blank">View&nbsp;<i class="fa fa-eye" aria-hidden="true"></i></a>
             </div>
             <div class="cardDesc">

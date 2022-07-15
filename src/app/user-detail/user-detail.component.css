@@ -31,6 +31,7 @@ p{
     font-weight: 600;
     font-family: 'Quicksand', sans-serif;
     background: #00ab47;
+    height: 30px;
 }
 .userDesc, .userLocation, .userLink{
     font-size: 1rem;

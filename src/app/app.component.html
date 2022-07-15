@@ -1,2 +1,2 @@
 <router-outlet  *ngIf="!modal"></router-outlet>
-<app-modal *ngIf="modal"></app-modal>
+<app-modal *ngIf="modal" (countChanged)="countChangedHandler($event)"></app-modal>

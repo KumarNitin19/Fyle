@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [],

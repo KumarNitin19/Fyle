@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fyle';
-  modal:boolean = false;
+  modal:boolean = true;
+
+  countChangedHandler(value:boolean) {
+    this.modal = value;
+    console.log(value);
+  }
 }

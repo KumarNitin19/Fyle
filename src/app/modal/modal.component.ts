@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -7,13 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
-  userName:string = 'KumarNitin19'
+  @Output() countChanged: EventEmitter<boolean> =   new EventEmitter();
+  userName:any = '';
+  error:boolean = false;
 
   constructor() { 
-    this.userName ='KumarNitin19'
   }
 
   ngOnInit(): void {
+  }
+
+  addData(value:any){
+    if(value !== ''){
+      this.error = false;
+      sessionStorage.setItem('userName',value);
+      this.countChanged.emit(false);
+    }else{
+      this.error = true;
+    }
   }
 
 }

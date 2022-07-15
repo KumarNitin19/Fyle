@@ -24,8 +24,7 @@ export class HomeComponent implements OnInit {
   }
 
   getData() {
-    // let userName = sessionStorage.getItem('userName')
-    let userName ='KumarNitin19'
+    let userName = sessionStorage.getItem('userName');
     let url = `https://api.github.com/users/${userName}`;
       this.service.getUser(url).subscribe((data) => {
         this.userData = data;
