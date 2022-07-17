@@ -12,7 +12,7 @@
     <div class="mainBody row justify-content-between" >
         <div class="card col-md-5 col-12" *ngFor="let item of repoList | paginate: { itemsPerPage: 10, currentPage: page }">
             <div class="cardHeading">
-                 <p class="col-7">{{item.name === null ? 'N/A' : item.name}}</p>
+                 <p class="col-9">{{item.name === null ? 'N/A' : item.name}}</p>
                  <a class="view" href={{item.html_url}} target="_blank">View&nbsp;<i class="fa fa-eye" aria-hidden="true"></i></a>
             </div>
             <div class="cardDesc">
